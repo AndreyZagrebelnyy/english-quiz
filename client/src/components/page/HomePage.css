@@ -1,0 +1,11 @@
+h1 {
+	color: #4A90E2;
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 20px;
+	background: linear-gradient(135deg, #cdd2d7, #416091);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
