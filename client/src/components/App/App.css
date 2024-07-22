@@ -1,45 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+	font-family: "Poppins", sans-serif;
+}
+.wrapper{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgb(44,40,105);
+	background: linear-gradient(40deg, rgba(44,40,105,1) 25%, rgba(121,22,9,1) 86%);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.logo.elbrus:hover {
-  filter: drop-shadow(0 0 2em rgb(103, 49, 251));
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #282c34; /* Dark background */
+	padding: 15px 30px; /* Spacing around the navbar */
+	color: white; /* Text color */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a {
+	color: white; /* Link color */
+	text-decoration: none; /* Remove underline */
+	padding: 10px 15px; /* Spacing around links */
+	transition: background-color 0.3s; /* Smooth background change */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar a:hover {
+	background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+	border-radius: 5px; /* Rounded corners on hover */
 }
 
-.card {
-  padding: 2em;
+.logout-cart-cont, .log-reg-cont {
+	display: flex;
+	align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.user-cont {
+	display: flex;
+	flex-direction: column; /* Stack email and score */
+	align-items: flex-end; /* Align to the right */
+	margin-left: 20px; /* Space between user info and links */
+}
+
+.user-cont div {
+	margin: 2px 0; /* Spacing between email and score */
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		 flex-direction: column; /* Stack items on smaller screens */
+		 align-items: flex-start; /* Align to the left */
+	}
+
+	.logout-cart-cont, .log-reg-cont {
+		 flex-direction: column; /* Stack links vertically */
+	}
+}
+
+h1 {
+	font-size: 2rem; /* Larger font size */
+	color: #333; /* Dark text color */
+	text-align: center; /* Center align the text */
+	font-weight: bold; /* Bold text */
+	letter-spacing: 1px; /* Space between letters */
+	line-height: 1.2; /* Line height for better readability */
+}
+
+h2 {
+	font-size: 1.5rem; /* Larger font size */
+	color: #333; /* Dark text color */
+	text-align: center; /* Center align the text */
+	font-weight: bold; /* Bold text */
+	letter-spacing: 1px; /* Space between letters */
+	line-height: 1.2; /* Line height for better readability */
 }

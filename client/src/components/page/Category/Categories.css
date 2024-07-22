@@ -1,0 +1,114 @@
+.categories-cont {
+	display: flex;
+	flex-direction: row;
+}
+
+.category {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	background-color: #fff9c1;
+	/* Bright yellow background */
+	background-size: cover;
+	/* Darker yellow border */
+	border-radius: 15px;
+	/* Rounded corners */
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	/* Soft shadow */
+	text-align: center;
+	/* Center align text */
+	padding: 20px;
+	/* Padding inside the card */
+	transition: transform 0.3s, box-shadow 0.3s;
+	/* Smooth transitions */
+	margin: 15px;
+	/* Space around the card */
+	cursor: pointer;
+	/* Pointer cursor on hover */
+	width: 400px;
+	height: 550px;
+}
+
+.category img {
+	width: 100%;
+	/* Full width */
+	border-radius: 10px;
+	/* Rounded corners for the image */
+	object-fit: cover;
+	/* Cover the area without distortion */
+	transition: transform 0.3s;
+	/* Smooth zoom effect */
+}
+
+.category h2 {
+	font-size: 2rem;
+	/* Larger font size */
+	color: #333;
+	/* Dark text color */
+	text-align: center;
+	/* Center align the text */
+	font-weight: bold;
+	/* Bold text */
+	letter-spacing: 1px;
+	/* Space between letters */
+	line-height: 1.2;
+	/* Line height for better readability */
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(0);
+	}
+
+	25% {
+		transform: translate(-5px, -5px);
+	}
+
+	50% {
+		transform: translate(5px, 5px);
+	}
+
+	75% {
+		transform: translate(-5px, -5px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+.category:hover {
+	animation: shake 0.5s;
+	/* Apply shake animation */
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+	/* Deeper shadow on hover */
+}
+
+.category:hover img {
+	transform: scale(1.1);
+	/* Zoom image on hover */
+}
+
+h1 {
+	/* Larger font size */
+	color: #333;
+	/* Dark text color */
+	text-align: center;
+	/* Center align the text */
+	/* Bold text */
+	letter-spacing: 1px;
+	/* Space between letters */
+	line-height: 1.2;
+	/* Line height for better readability */
+}
+
+.outline h2{
+	color: rgb(255, 255, 255); /* Main text color */
+	text-shadow: 
+		 -1px -1px 0 #333,  
+		  1px -1px 0 #333,
+		 -1px  1px 0 #333,
+		  1px  1px 0 #333; /* Black outline */
+	font-size: 2rem; /* Adjust font size as needed */
+	margin: 0;
+}

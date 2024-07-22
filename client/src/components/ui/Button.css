@@ -1,0 +1,59 @@
+.delete-button{
+	width: 200px;
+	background-color: #cb3116;
+	border-radius: 20px;
+}
+
+.change-button{
+	width: 200px;
+	background-color: #52a7e4;
+	border-radius: 20px;
+}
+
+.create-button{
+	width: 200px;
+	background-color: #2bc386;
+	border-radius: 20px;
+}
+.add-button{
+	width: 200px;
+	background-color: #6276c5;
+	border-radius: 20px;
+}
+
+
+.next-button{
+	background-color: #77cf70; /* Primary button color */
+	color: white; /* Text color */
+	padding: 10px 15px; /* Padding inside the button */
+	border: none; /* Remove border */
+	border-radius: 5px; /* Rounded corners */
+	cursor: pointer; /* Pointer cursor on hover */
+	font-size: 16px; /* Font size */
+	transition: background-color 0.3s; /* Smooth background change */
+
+}
+
+.next-button:hover{
+	background-color: #467a42; /* Primary button color */
+}
+
+.answer-button{
+	background-color: #007bff; /* Primary button color */
+	color: white; /* Text color */
+	padding: 10px 15px; /* Padding inside the button */
+	border: none; /* Remove border */
+	border-radius: 5px; /* Rounded corners */
+	cursor: pointer; /* Pointer cursor on hover */
+	font-size: 16px; /* Font size */
+	transition: background-color 0.3s; /* Smooth background change */
+
+}
+
+button:hover {
+	background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+
